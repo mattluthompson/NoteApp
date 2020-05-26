@@ -29,7 +29,7 @@ class NotesCard extends React.Component {
     }
 
     editTitle() {
-        const newTitle = window.prompt("Enter new title: ")
+        const newTitle = window.prompt("Edit title: ", this.state.title)
         if(newTitle) {
             this.setState({
                 title: newTitle
@@ -38,7 +38,7 @@ class NotesCard extends React.Component {
     }
 
     editBody() {
-        const newBody = window.prompt("Enter new text: ")
+        const newBody = window.prompt("Edit text: ", this.state.body)
         if(newBody) {
             this.setState({
                 body: newBody
